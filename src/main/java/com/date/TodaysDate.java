@@ -1,13 +1,15 @@
+package com.date;
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class TodaysDate {
-    String time;
     public int day;
     protected int year;
+    String time;
     private int month;
 
-    public void mostrarFechaYTiempoActual() {
+    public void printDateAndTime() {
         GregorianCalendar calendar = new GregorianCalendar();
 
         time = calendar.get(Calendar.HOUR_OF_DAY) + ":"
@@ -24,10 +26,5 @@ public class TodaysDate {
     @Override
     public String toString() {
         return "Tiempo: %s%nFecha: %s/%s/%s%n".formatted(time, day, month, year);
-    }
-
-    public static void main(String[] args) {
-        TodaysDate todaysDate = new TodaysDate();
-        todaysDate.mostrarFechaYTiempoActual();
     }
 }
