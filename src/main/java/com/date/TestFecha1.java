@@ -5,7 +5,9 @@ public class TestFecha1 {
         TodaysDate hoy = new TodaysDate();
 
         hoy.printDateAndTime();
+//        System.out.println("hoy.time = " + hoy.time);
+//        System.out.println("hoy.month = " + hoy.month);
+        System.out.println("hoy.year = " + hoy.year);
 
-        System.out.println(hoy.time);
     }
 }
